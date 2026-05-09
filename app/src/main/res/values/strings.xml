@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">中国象棋</string>
+    <string name="hint_select_piece">请选择要移动的棋子</string>
+    <string name="hint_move_piece">请选择目标位置</string>
+    <string name="hint_invalid_move">此步无效</string>
+    <string name="hint_check">将军！</string>
+    <string name="hint_checkmate">将死！游戏结束</string>
+    <string name="hint_capture">提示：可以吃掉对方棋子</string>
+    <string name="hint_threatened">警告：此棋子正被威胁</string>
+    <string name="hint_move_hint">建议走法：</string>
+    <string name="btn_new_game">新游戏</string>
+    <string name="btn_undo">悔棋</string>
+    <string name="btn_hint">提示</string>
+    <string name="black_turn">黑方回合</string>
+    <string name="red_turn">红方回合</string>
+    <string name="settings">设置</string>
+    <string name="show_hints">显示提示</string>
+    <string name="show_risk">显示风险提示</string>
+</resources>
