@@ -20,16 +20,17 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         
-    - name: Download Gradle 8.4
+    - name: Download and install Gradle 8.4
       run: |
+        cd /home/runner
         wget -q https://services.gradle.org/distributions/gradle-8.4-bin.zip
         unzip -q gradle-8.4-bin.zip
-        export PATH=/home/runner/gradle-8.4/bin:$PATH
         
     - name: Build with Gradle
       run: |
-        export PATH=/home/runner/gradle-8.4/bin:$PATH
-        gradle wrapper --gradle-version 8.4
+        cd /home/runner/work/ChineseChess/ChineseChess
+        /home/runner/gradle-8.4/bin/gradle wrapper --gradle-version 8.4
+        chmod +x gradlew
         ./gradlew assembleDebug --no-daemon
         
     - name: Upload APK
